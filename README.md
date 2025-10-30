@@ -1,6 +1,6 @@
 # CIFAR-10 Image Classification Project
 
-This project demonstrates a complete **end-to-end machine learning workflow** — from data preparation and model training to SQL-based logging and Power BI visualization — using the **CIFAR-10** dataset.
+This project demonstrates a complete **end-to-end machine learning workflow**, from data preparation and model training to SQL-based logging and Power BI visualization, using the **CIFAR-10** dataset.
 It’s designed to showcase both **data engineering** and **machine learning** skills in a professional portfolio context.
 
 ---
