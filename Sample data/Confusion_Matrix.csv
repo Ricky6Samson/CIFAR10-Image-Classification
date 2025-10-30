@@ -1,0 +1,100 @@
+﻿"M07                      ","airplane  ","airplane  ",895
+"M07                      ","airplane  ",automobile,4
+"M07                      ","airplane  ","bird      ",26
+"M07                      ","airplane  ","cat       ",9
+"M07                      ","airplane  ","deer      ",7
+"M07                      ","airplane  ","dog       ",0
+"M07                      ","airplane  ","frog      ",3
+"M07                      ","airplane  ","horse     ",7
+"M07                      ","airplane  ","ship      ",38
+"M07                      ","airplane  ","truck     ",11
+"M07                      ",automobile,"airplane  ",2
+"M07                      ",automobile,automobile,944
+"M07                      ",automobile,"bird      ",3
+"M07                      ",automobile,"cat       ",2
+"M07                      ",automobile,"deer      ",2
+"M07                      ",automobile,"dog       ",2
+"M07                      ",automobile,"frog      ",1
+"M07                      ",automobile,"horse     ",3
+"M07                      ",automobile,"ship      ",14
+"M07                      ",automobile,"truck     ",27
+"M07                      ","bird      ","airplane  ",11
+"M07                      ","bird      ",automobile,0
+"M07                      ","bird      ","bird      ",921
+"M07                      ","bird      ","cat       ",23
+"M07                      ","bird      ","deer      ",23
+"M07                      ","bird      ","dog       ",6
+"M07                      ","bird      ","frog      ",8
+"M07                      ","bird      ","horse     ",5
+"M07                      ","bird      ","ship      ",3
+"M07                      ","bird      ","truck     ",0
+"M07                      ","cat       ","airplane  ",3
+"M07                      ","cat       ",automobile,1
+"M07                      ","cat       ","bird      ",20
+"M07                      ","cat       ","cat       ",837
+"M07                      ","cat       ","deer      ",39
+"M07                      ","cat       ","dog       ",71
+"M07                      ","cat       ","frog      ",12
+"M07                      ","cat       ","horse     ",10
+"M07                      ","cat       ","ship      ",6
+"M07                      ","cat       ","truck     ",1
+"M07                      ","deer      ","airplane  ",3
+"M07                      ","deer      ",automobile,1
+"M07                      ","deer      ","bird      ",33
+"M07                      ","deer      ","cat       ",23
+"M07                      ","deer      ","deer      ",912
+"M07                      ","deer      ","dog       ",8
+"M07                      ","deer      ","frog      ",3
+"M07                      ","deer      ","horse     ",15
+"M07                      ","deer      ","ship      ",2
+"M07                      ","deer      ","truck     ",0
+"M07                      ","dog       ","airplane  ",1
+"M07                      ","dog       ",automobile,0
+"M07                      ","dog       ","bird      ",19
+"M07                      ","dog       ","cat       ",117
+"M07                      ","dog       ","deer      ",18
+"M07                      ","dog       ","dog       ",820
+"M07                      ","dog       ","frog      ",5
+"M07                      ","dog       ","horse     ",16
+"M07                      ","dog       ","ship      ",4
+"M07                      ","dog       ","truck     ",0
+"M07                      ","frog      ","airplane  ",6
+"M07                      ","frog      ",automobile,2
+"M07                      ","frog      ","bird      ",26
+"M07                      ","frog      ","cat       ",47
+"M07                      ","frog      ","deer      ",19
+"M07                      ","frog      ","dog       ",6
+"M07                      ","frog      ","frog      ",889
+"M07                      ","frog      ","horse     ",1
+"M07                      ","frog      ","ship      ",3
+"M07                      ","frog      ","truck     ",1
+"M07                      ","horse     ","airplane  ",8
+"M07                      ","horse     ",automobile,0
+"M07                      ","horse     ","bird      ",12
+"M07                      ","horse     ","cat       ",25
+"M07                      ","horse     ","deer      ",37
+"M07                      ","horse     ","dog       ",12
+"M07                      ","horse     ","frog      ",1
+"M07                      ","horse     ","horse     ",900
+"M07                      ","horse     ","ship      ",3
+"M07                      ","horse     ","truck     ",2
+"M07                      ","ship      ","airplane  ",16
+"M07                      ","ship      ",automobile,6
+"M07                      ","ship      ","bird      ",5
+"M07                      ","ship      ","cat       ",2
+"M07                      ","ship      ","deer      ",0
+"M07                      ","ship      ","dog       ",0
+"M07                      ","ship      ","frog      ",0
+"M07                      ","ship      ","horse     ",2
+"M07                      ","ship      ","ship      ",960
+"M07                      ","ship      ","truck     ",9
+"M07                      ","truck     ","airplane  ",5
+"M07                      ","truck     ",automobile,38
+"M07                      ","truck     ","bird      ",4
+"M07                      ","truck     ","cat       ",8
+"M07                      ","truck     ","deer      ",0
+"M07                      ","truck     ","dog       ",2
+"M07                      ","truck     ","frog      ",0
+"M07                      ","truck     ","horse     ",3
+"M07                      ","truck     ","ship      ",16
+"M07                      ","truck     ","truck     ",924

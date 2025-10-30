@@ -1,0 +1,7 @@
+﻿"M01                      ","Custom_CNN-1             ",0.772199988365173,0.774999976158142,2025-10-19,Custom CNN with Dropout and BN layers
+"M02                      ","Custom_CNN-2             ",0.794200003147125,0.755720019340515,2025-10-20,Custom CNN with Dropout and BN layers and augmented data
+"M03                      ","MobileNet_v2-1           ",0.864499986171722,0.84254002571106,2025-10-21,MobileNet-v2
+"M04                      ","MobileNet_v2-2           ",0.873399972915649,0.850380003452301,2025-10-22,MobileNet-v2 with Dropout layer
+"M05                      ","MobileNet_v2-3           ",0.87610000371933,0.908800005912781,2025-10-23,MobileNet-v2 with Dropout and BN layers
+"M06                      ","MobileNet_v2-4           ",0.894500017166138,0.95194000005722,2025-10-24,"MobileNet-v2 with Dropout, BN and Pooling layers"
+"M07                      ","MobileNet_v2-5           ",0.900200009346008,0.975600004196167,2025-10-25,MobileNet-v2 by unfreezing all but last 30 layers
