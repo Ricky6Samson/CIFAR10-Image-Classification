@@ -71,7 +71,7 @@ The **CIFAR10-report.pbix** file visualizes key insights:
 
 A preview is included below:
 
-![Dashboard Preview](Dashboard.png)
+![Dashboard Preview](Dashboard.PNG)
 
 ---
 
