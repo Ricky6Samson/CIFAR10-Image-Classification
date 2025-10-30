@@ -39,7 +39,7 @@ CIFAR10-Project
 The **CIFAR-10** dataset contains 60,000 images across 10 object classes.
 This project involves:
 
-1. Building and training two models — a **custom CNN** and a **transfer learning model** (using MobileNet_v2).
+1. Building and training two models : a **custom CNN** and a **transfer learning model** (using MobileNet_v2).
 2. Logging model statistics and metrics into **SQL tables** for structured tracking.
 3. Creating **interactive Power BI dashboards** to visualize model performance, accuracy trends, and class-wise results.
 
