@@ -5,26 +5,26 @@ It’s designed to showcase both **data engineering** and **machine learning** s
 
 ---
 
-## 📂 Project Structure
+##  Project Structure
 
 ```
 CIFAR10-Project
 │
-├── 📁 Sample Data
+├──  Sample Data
 │   ├── Class_Metrics
 │   ├── Confusion_Matrix
 │   ├── Epoch_Stats
 │   ├── Model_Info
 │   └── Predictions_Log
 │
-├── 📁 Notebooks
+├──  Notebooks
 │   ├── Data Preparation.ipynb        # Functions for preparing CIFAR-10 data for CNN and Transfer Learning models
 │   ├── Training.ipynb                # Custom CNN definition and training + transfer model training
 │   ├── Metrics.ipynb                 # Prediction, classification report, and confusion matrix functions
 │   ├── SQL_Logging.ipynb             # Snippets to log data into the 5 SQL tables
 │   └── Libraries.ipynb               # All necessary library imports
 │
-├── 📁 SQL
+├──  SQL
 │   └── create_tables.sql             # Queries to create 5 database tables
 │
 ├── CIFAR10-report.pbix               # Power BI report visualizing all 5 SQL tables
@@ -34,7 +34,7 @@ CIFAR10-Project
 
 ---
 
-## 🧠 Project Overview
+##  Project Overview
 
 The **CIFAR-10** dataset contains 60,000 images across 10 object classes.
 This project involves:
@@ -45,7 +45,7 @@ This project involves:
 
 ---
 
-## 🗄️ SQL Database Design
+##  SQL Database Design
 
 Five tables were used to store experiment data:
 
@@ -59,7 +59,7 @@ Five tables were used to store experiment data:
 
 ---
 
-## 📊 Power BI Dashboard
+##  Power BI Dashboard
 
 The **CIFAR10-report.pbix** file visualizes key insights:
 
@@ -75,7 +75,7 @@ A preview is included below:
 
 ---
 
-## ⚙️ How to Use
+##  How to Use
 
 1. **Clone or download** this repository.
 2. **Create SQL tables** using `SQL/create_tables.sql`.
@@ -89,7 +89,7 @@ A preview is included below:
 4. **Insert data** using the provided notebooks.
 5. **Open Power BI** and load data from the SQL tables to explore the visuals.
 
-## 🧾 Results Summary
+##  Results Summary
 
 * **Average Accuracy (Best Model):** ~90%
 * **Average Overfitting Gap:** 1%
@@ -101,7 +101,7 @@ A preview is included below:
 
 ---
 
-## 🧰 Tech Stack
+##  Tech Stack
 
 | Category          | Tools Used                                      |
 | ----------------- | ----------------------------------------------- |
@@ -113,10 +113,10 @@ A preview is included below:
 
 ---
 
-## 👨‍💻 Author
+##  Author
 
 **Ricky Samson**
 A data & ML enthusiast building end-to-end analytical solutions.
-📫 [www.linkedin.com/in/ricky-samson-aa6569331]
+ [www.linkedin.com/in/ricky-samson-aa6569331]
 
 ---
