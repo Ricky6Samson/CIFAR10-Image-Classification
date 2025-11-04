@@ -1,11 +1,17 @@
-🧠 CIFAR-10 Image Classification Project
+# 🧠 CIFAR-10 Image Classification Project  
 
-This project walks through a complete end-to-end machine learning workflow, built around the CIFAR-10 image dataset.
+This project walks through a **complete end-to-end machine learning workflow** built around the **CIFAR-10 image dataset**.  
 
-It covers everything from data preparation and model training to experiment logging in SQL and interactive visualization in Power BI.
-My goal here was to show how I approach ML projects not just from a modeling perspective, but from a real-world, end-to-end analytical pipeline point of view.
+It covers everything from **data preparation and model training** to **experiment logging in SQL** and **interactive visualization in Power BI**.  
+The goal is to show how I approach ML projects from both a **technical** and **real-world** perspective — building something accurate, structured, and explainable.  
 
-📂 Project Structure
+---
+
+---
+
+## 📂 Project Structure  
+
+```
 CIFAR10-Project
 │
 ├── Sample Data
@@ -16,149 +22,167 @@ CIFAR10-Project
 │   └── Predictions_Log
 │
 ├── Notebooks
-│   ├── Libraries.ipynb                      # All library imports
+│   ├── Libraries.ipynb               # Library imports
 │   ├── Data Preparation.ipynb        # Data loading, normalization, augmentation
-│   ├── Training.ipynb                     # Custom CNN + Transfer Learning (MobileNetV2)
-│   ├── Metrics.ipynb                      # Evaluation and visualization
-│   ├── SQL_Logging.ipynb            # Logging results into SQL
+│   ├── Training.ipynb                # Custom CNN + Transfer Learning (MobileNetV2)
+│   ├── Metrics.ipynb                 # Evaluation and visualization
+│   ├── SQL_Logging.ipynb             # Logs model metrics to SQL
 │
 ├── SQL
-│   └── create_tables.sql             # Script to create the 5 SQL tables
+│   └── create_tables.sql             # Script to create 5 SQL tables
 │
 ├── CIFAR10-report.pbix               # Power BI dashboard
 ├── Dashboard.png                     # Dashboard preview
 └── README.md
+```
 
-🚀 Overview
+---
 
-The CIFAR-10 dataset contains 60,000 color images (32x32 pixels) across 10 classes, including animals, vehicles, and objects.
+---
 
-In this project, I:
+## 🚀 Overview  
 
-Trained two models — a Custom CNN and a Transfer Learning model using MobileNetV2.
+The **CIFAR-10** dataset contains 60,000 color images (32×32 px) across 10 object classes.  
 
-Used data augmentation to improve generalization.
+In this project, I:  
+1. Trained two models — a **custom CNN** and a **transfer learning model (MobileNetV2)**.  
+2. Used **data augmentation** to improve generalization and reduce overfitting.  
+3. Logged all training runs and metrics into a **SQL database**.  
+4. Built a **Power BI dashboard** to visualize and compare results.  
 
-Logged all experiment details and metrics into a SQL database.
+The focus was to demonstrate how a machine learning pipeline can be built and tracked end-to-end, not just model performance.
 
-Built a Power BI dashboard to visualize training trends and compare models.
+---
 
-It’s meant to demonstrate both machine learning and data engineering thinking in one cohesive pipeline.
+---
 
-🧩 SQL Database Design
+## 🧩 SQL Database Design  
 
-To make the experiment tracking structured and reusable, I designed five SQL tables:
+Five SQL tables were designed to store model training and evaluation data:
 
-Table	Description
-Model_Info	Stores model names, training date, and accuracy scores.
-Epoch_Stats	Logs epoch-level metrics like loss and accuracy.
-Class_Metrics	Stores per-class precision, recall, and F1 scores.
-Confusion_Matrix	Records actual vs. predicted values for misclassification analysis.
-Predictions_Log	Keeps a detailed record of each prediction and whether it was correct.
+| Table | Description |
+|-------|--------------|
+| **Model_Info** | Stores model name, training date, and overall performance. |
+| **Epoch_Stats** | Tracks epoch-level loss and accuracy metrics. |
+| **Class_Metrics** | Precision, recall, F1-score, and support for each class. |
+| **Confusion_Matrix** | True vs predicted counts for misclassification analysis. |
+| **Predictions_Log** | Each image’s prediction and whether it was correct. |
 
-This approach mirrors how real ML projects maintain experiment history for reproducibility and version tracking.
+This structure makes experiment tracking efficient and reproducible, similar to **MLOps experiment logging**.
 
-📊 Power BI Dashboard
+---
 
-The Power BI dashboard brings the SQL data to life with interactive visuals.
-It includes:
+---
 
-KPI Cards for best model accuracy and training summary.
+## 📊 Power BI Dashboard  
 
-Trend charts for loss and accuracy over epochs.
+The **Power BI dashboard** visualizes model insights in an interactive and business-friendly way.  
 
-Class-level metrics for detailed performance comparison.
+Key visuals include:  
+- **KPI Cards** — best accuracy, training summary, and model stats.  
+- **Trend Charts** — training and validation accuracy/loss by epoch.  
+- **Class Metrics** — per-class F1, precision, and recall.  
+- **Confusion Matrix Heatmap** — to identify where models struggle.  
+- **Model Comparison** — comparing custom CNN vs MobileNetV2.  
 
-Confusion matrix heatmap to spot where models struggle most.
+**Dashboard Preview:**  
+![Dashboard Preview](Dashboard.PNG)
 
-Model comparison visuals showing overfitting and generalization gaps.
+---
 
-Dashboard Preview:
+---
 
+## 🧠 Model Development  
 
-🧠 Model Development
-1. Data Preparation & Augmentation
+### 🔹 Data Preparation & Augmentation  
+All CIFAR-10 images were normalized and augmented using:  
+- Random horizontal flips  
+- Small rotations  
+- Zoom and shift transformations  
 
-Before training, I normalized the pixel values and applied data augmentation to help models generalize better.
-The augmentations included:
+This improved robustness and reduced overfitting by roughly **2–3%**.
 
-Random flips
+---
 
-Small rotations
+### 🔹 Model Architectures  
 
-Zooms and shifts
+**Custom CNN**  
+- Three convolutional blocks with BatchNorm and Dropout  
+- Adam optimizer with learning rate scheduling  
+- Early stopping to prevent overfitting  
 
-This simple step reduced overfitting and improved validation accuracy by around 2–3%.
+**Transfer Learning (MobileNetV2)**  
+- Pretrained on ImageNet  
+- Initially froze base layers, then fine-tuned top 50 layers  
+- Used callbacks like `EarlyStopping` and `ReduceLROnPlateau`  
 
-2. Model Architectures
+Transfer learning significantly boosted validation accuracy and model stability.
 
-Custom CNN
+---
 
-3 convolutional blocks with BatchNorm and Dropout
+### 🔹 Optimization & Tracking  
+- **Data augmentation** to increase diversity  
+- **EarlyStopping** to avoid unnecessary epochs  
+- **Learning rate scheduling** for smooth convergence  
+- **SQL logging** for transparent experiment history  
+- **Power BI dashboard** for visual model comparison  
 
-Adam optimizer with learning rate decay
+---
 
-Early stopping to prevent overfitting
+---
 
-Transfer Learning (MobileNetV2)
+## 🧾 Results Summary  
 
-Pretrained on ImageNet and fine-tuned on CIFAR-10
+| Metric | Custom CNN | Transfer Learning |
+| ------- | ----------- | ---------------- |
+| Train Accuracy | 92% | 95% |
+| Validation Accuracy | 83% | **90%** |
+| Overfitting Gap | 9% | **1%** |
+| Best Epoch | 24 | 17 |
 
-Froze the base layers initially, then unfroze top layers for fine-tuning
+**Highlights:**  
+- Transfer learning achieved higher validation accuracy with minimal overfitting.  
+- Data augmentation improved class balance and performance stability.  
+- Dog–Cat and Truck–Automobile classes had the highest confusion rates.  
 
-Used callbacks like EarlyStopping and ReduceLROnPlateau
+---
 
-The transfer learning model clearly outperformed the custom CNN, with better validation accuracy and less overfitting.
+---
 
-3. Optimization & Tracking
+## 🧰 Tech Stack  
 
-I used the following techniques to make training smoother and more reliable:
+| Category | Tools Used |
+|-----------|------------|
+| **Programming** | Python, Jupyter Notebook |
+| **Libraries** | TensorFlow, Keras, scikit-learn, NumPy, Pandas |
+| **Database** | SQL Server |
+| **Visualization** | Power BI |
+| **Dataset** | CIFAR-10 |
 
-EarlyStopping to stop training when validation stopped improving
+---
 
-Learning rate scheduling to fine-tune model convergence
+---
 
-SQL-based logging to store results from each experiment
+## 💼 Why This Project Matters  
 
-Power BI dashboards for at-a-glance model monitoring
+This project reflects how I like to approach machine learning — with structure, clarity, and explainability.  
 
-🧾 Results Summary
-Metric	Custom CNN	Transfer Learning
-Train Accuracy	92%	95%
-Validation Accuracy	83%	90%
-Overfitting Gap	9%	1%
-Best Epoch	24	17
+It shows skills across:  
+- **Model building** and **fine-tuning**  
+- **Data engineering and SQL-based experiment tracking**  
+- **Insight visualization in Power BI**  
+- **Reproducible workflows** similar to production-level MLOps setups  
 
-Key Takeaways:
+It’s not just about accuracy — it’s about designing a workflow that could scale in real-world scenarios.
 
-The transfer learning model generalized far better, even with fewer training epochs.
+---
 
-Data augmentation helped stabilize accuracy trends.
+---
 
-Most misclassifications happened between visually similar classes (e.g., dog vs. cat, truck vs. automobile).
+## 👤 Author  
 
-🧰 Tech Stack
-Category	Tools Used
-Programming	Python, Jupyter Notebook
-Libraries	TensorFlow, Keras, scikit-learn, NumPy, Pandas
-Database	SQL Server
-Visualization	Power BI
-Dataset	CIFAR-10
-💼 Why This Project Matters
+**Ricky Samson**  
+Data & Machine Learning Enthusiast | Building practical end-to-end analytics pipelines  
+🔗 [LinkedIn: www.linkedin.com/in/ricky-samson-aa6569331]
 
-This project is a reflection of how I approach machine learning practically:
-
-It’s structured, not just experimental.
-
-Results are tracked and explainable.
-
-The final output (Power BI dashboard) translates metrics into business-ready visuals.
-
-It shows the blend of data analysis, machine learning, and presentation that’s essential for real-world data roles.
-
-👤 Author
-
-Ricky Samson
-Data & Machine Learning Enthusiast | Building real-world analytics pipelines
-🔗 [LinkedIn: www.linkedin.com/in/ricky-samson-aa6569331
-]
+---
