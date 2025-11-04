@@ -1,4 +1,4 @@
-# 🧠 CIFAR-10 Image Classification Project  
+# CIFAR-10 Image Classification Project  
 
 This project walks through a **complete end-to-end machine learning workflow** built around the **CIFAR-10 image dataset**.  
 
@@ -9,7 +9,7 @@ The goal is to show how I approach ML projects from both a **technical** and **r
 
 ---
 
-## 📂 Project Structure  
+## Project Structure  
 
 ```
 CIFAR10-Project
@@ -40,7 +40,7 @@ CIFAR10-Project
 
 ---
 
-## 🚀 Overview  
+## Overview  
 
 The **CIFAR-10** dataset contains 60,000 color images (32×32 px) across 10 object classes.  
 
@@ -56,7 +56,7 @@ The focus was to demonstrate how a machine learning pipeline can be built and tr
 
 ---
 
-## 🧩 SQL Database Design  
+## SQL Database Design  
 
 Five SQL tables were designed to store model training and evaluation data:
 
@@ -74,7 +74,7 @@ This structure makes experiment tracking efficient and reproducible, similar to 
 
 ---
 
-## 📊 Power BI Dashboard  
+## Power BI Dashboard  
 
 The **Power BI dashboard** visualizes model insights in an interactive and business-friendly way.  
 
@@ -92,9 +92,9 @@ Key visuals include:
 
 ---
 
-## 🧠 Model Development  
+##  Model Development  
 
-### 🔹 Data Preparation & Augmentation  
+###  Data Preparation & Augmentation  
 All CIFAR-10 images were normalized and augmented using:  
 - Random horizontal flips  
 - Small rotations  
@@ -109,18 +109,19 @@ This improved robustness and reduced overfitting by roughly **2–3%**.
 **Custom CNN**  
 - Three convolutional blocks with BatchNorm and Dropout  
 - Adam optimizer with learning rate scheduling  
-- Early stopping to prevent overfitting  
+- Early stopping to prevent overfitting
+- Model checkpoint to save the model with the best performing parameters 
 
 **Transfer Learning (MobileNetV2)**  
 - Pretrained on ImageNet  
-- Initially froze base layers, then fine-tuned top 50 layers  
+- Initially froze base layers, then unfroze all but last 30 layers for fine tuning  
 - Used callbacks like `EarlyStopping` and `ReduceLROnPlateau`  
 
 Transfer learning significantly boosted validation accuracy and model stability.
 
 ---
 
-### 🔹 Optimization & Tracking  
+###  Optimization & Tracking  
 - **Data augmentation** to increase diversity  
 - **EarlyStopping** to avoid unnecessary epochs  
 - **Learning rate scheduling** for smooth convergence  
@@ -131,7 +132,7 @@ Transfer learning significantly boosted validation accuracy and model stability.
 
 ---
 
-## 🧾 Results Summary  
+##  Results Summary  
 
 | Metric | Custom CNN | Transfer Learning |
 | ------- | ----------- | ---------------- |
@@ -149,7 +150,7 @@ Transfer learning significantly boosted validation accuracy and model stability.
 
 ---
 
-## 🧰 Tech Stack  
+##  Tech Stack  
 
 | Category | Tools Used |
 |-----------|------------|
@@ -163,7 +164,7 @@ Transfer learning significantly boosted validation accuracy and model stability.
 
 ---
 
-## 💼 Why This Project Matters  
+## Purpose of this project 
 
 This project reflects how I like to approach machine learning — with structure, clarity, and explainability.  
 
@@ -179,7 +180,7 @@ It’s not just about accuracy — it’s about designing a workflow that could 
 
 ---
 
-## 👤 Author  
+##  Author  
 
 **Ricky Samson**  
 Data & Machine Learning Enthusiast | Building practical end-to-end analytics pipelines  
