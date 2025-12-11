@@ -174,8 +174,6 @@ It shows skills across:
 - **Insight visualization in Power BI**  
 - **Reproducible workflows** similar to production-level MLOps setups  
 
-It’s not just about accuracy — it’s about designing a workflow that could scale in real-world scenarios.
-
 ---
 
 ---
