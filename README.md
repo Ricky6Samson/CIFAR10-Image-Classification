@@ -183,7 +183,7 @@ It’s not just about accuracy — it’s about designing a workflow that could 
 ##  Author  
 
 **Ricky Samson**  
-Data & Machine Learning Enthusiast | Building practical end-to-end analytics pipelines  
+Aspiring Data Scientist | Machine Learning Enthusiast  
 🔗 [LinkedIn: www.linkedin.com/in/ricky-samson-aa6569331]
 
 ---
